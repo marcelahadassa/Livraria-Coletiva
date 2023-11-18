@@ -4,7 +4,7 @@
 <head>
     <title>Livroteca Coletiva</title>
     <meta name="viewport" content="width=device.width, initial.scale=1.0" />
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -13,19 +13,21 @@
         <hr>
         <p class="description">Adicione o seu livro favorito!</p>
         <div class="input-books">
-            <input 
-                type="text" 
-                id="bookName" 
-                name="bookName" 
-                placeholder="Insira o nome do livro">
-
-                <input
-                type="text"
-                id="bookUrl"
-                name="bookUrl"
-                placeholder="Insira a URL da imagem do livro">
+            <input type="text" id="bookCover" name="bookCover" placeholder="Insira o nome do livro"
+                style="width: 250px; border-radius: 30px" />
+            <input type="text" id="bookUrl" name="bookUrl" placeholder="Insira a URL da imagem do livro"
+                style="width: 250px; border-radius: 30px" />
         </div>
-    </div>
-</body>
+        <button class="addBook" onclick="adicionarLivro()">
+            Adicionar livro
+        </button>
 
+        <div id="listaLivros">
+            
+        </div>
+        <div id="livrosNomes"></div>
+        <script src="catalogo.js"></script>
+    </div>
+  <footer></footer>
+ </body>
 </html>
