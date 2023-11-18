@@ -1,51 +1,66 @@
 body {
-    font-family: "Helvetica", monospace;
-    text-align: center;
-    background-image: url("https://libertywingspan.com/wp-content/uploads/2023/11/ezgif.com-video-to-gif-1-600x338.gif");
-    background-color: #000000;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-  }
-  
-  .container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .site-title {
-    color: #ffffff;
-    margin: 0 0 10px;
-    font-size: 25px;
-    letter-spacing: 8px;
-  }
+  font-family: Helvetica, monospace;
+  text-align: center;
+  background-color: #4e1889;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.site-title {
+  color: #ffffff;
+  margin: 0 0 10px;
+  font-size: 25px;
+  letter-spacing: 6px;
+}
 
 
-  
-  .description {
-    color: #ffffff;
-    font-size: 16px;
-  }
-
-  .input-books {
-
-    padding: 1px;
-    text-align: center;
-  }
-  
-  hr {
+hr {
   border-color: white;
   border: 1px solid white;
   width: 100%;
-  }
-  
-  
-  
-  body > img {
-    margin: 0 10px;
-  }
-  
-  img {
-    max-height: 250px;
-  }
-  
+}
+
+.description {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.input-books {
+  padding: 1px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+
+.addBook {
+  border-radius: 13px;
+  color: rgb(51, 42, 156);
+  border: none;
+  padding: 6px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.addBook:hover {
+  transform: translateY(-5px);
+}
+
+body>img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: translateY(-6px);
+  border-radius: 20px;
+}
